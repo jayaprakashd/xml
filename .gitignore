@@ -1,0 +1,17 @@
+<studentdetails>
+  <student>
+    <studentid>ST17925</studentid>
+    <classname>Class 1 B</classname>
+    <currentgrade>1.02</currentgrade>
+  </student>
+  <student>
+    <studentid>ST17926</studentid>
+    <classname>Class 1 B</classname>
+    <currentgrade>3.0</currentgrade>
+  </student>
+  <student>
+    <studentid>ST17927</studentid>
+    <classname>Class 1 B</classname>
+    <currentgrade>3.0</currentgrade>
+  </student>
+<studentdetails>
