@@ -186,16 +186,23 @@ public class XmlParser11
 }
 public static class Reduce
     extends Reducer<Text, Text, Text, Text> {
-
-
+private Text outputKey = new Text();
   public void reduce(Text key, Iterable<Text> values,
                      Context context)
       throws IOException, InterruptedException {
-    for (Text value : values) {
-     // outputKey.set(constructPropertyXml(key, value));
-      context.write(key, value);
+
+  for (Text value : values) {
+     outputKey.set(constructPropertyXml(key, value));
+      context.write(outputKey, null);
     }
   }
+ public static String constructPropertyXml(Text name, Text value) {
+    StringBuilder sb = new StringBuilder();
+    sb.append("name: ").append(name)
+        .append("  attendence%: ").append(value);
+        return sb.toString();
+  }
+
 
 }
 
