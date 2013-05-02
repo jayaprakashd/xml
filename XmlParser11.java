@@ -1,3 +1,13 @@
+/* output
+name:ST17925 currentgrade 1.02
+name:ST17926 currentgrade 3.0
+name:ST17927 currentgrade3.0
+name:ST17928 currentgrade 3.0
+name:ST17929 currentgrade 3.0
+name:ST17930 currentgrade 3.01
+*/
+
+
 package com.org;
 import javax.xml.stream.XMLStreamConstants;//XMLInputFactory;
 import java.io.*;
