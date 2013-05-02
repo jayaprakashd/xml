@@ -199,7 +199,7 @@ private Text outputKey = new Text();
  public static String constructPropertyXml(Text name, Text value) {
     StringBuilder sb = new StringBuilder();
     sb.append("name: ").append(name)
-        .append("  attendence%: ").append(value);
+        .append("  currentgrade ").append(value);
         return sb.toString();
   }
 
